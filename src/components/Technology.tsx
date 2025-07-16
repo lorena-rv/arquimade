@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Monitor, Layers, Eye, Laptop } from 'lucide-react';
 
 const Technology = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const technologies = [
     {
       icon: Layers,
@@ -78,18 +86,25 @@ const Technology = () => {
                 </div>
               </div>
             </div>
-            <div className="relative">
-              <img 
-                src="/Arquimade4.webp" 
-                alt="Equipo de Arquimade trabajando con software especializado" 
-                className="w-full h-80 object-cover rounded-xl"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-transparent to-transparent rounded-xl"></div>
-              <div className="absolute bottom-4 left-4 right-4">
-                <div className="bg-emerald-600/90 backdrop-blur-sm rounded-lg p-4">
-                  <div className="text-center">
-                    <Monitor className="w-8 h-8 text-white mx-auto mb-2" />
-                    <div className="text-white font-bold">Cadwork 3D</div>
+            <div className="relative overflow-hidden rounded-xl">
+              {/* Parallax Background Image */}
+              <div className="relative h-80 overflow-hidden">
+                <div 
+                  className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
+                  style={{ 
+                    backgroundImage: "url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+                    transform: `translateY(${scrollY * 0.15}px)`,
+                    scale: '1.1'
+                  }}
+                />
+                {/* Dark overlay for better text contrast */}
+                <div className="absolute inset-0 bg-black/60"></div>
+                
+                {/* Content overlay */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="bg-emerald-600/90 backdrop-blur-sm rounded-lg p-6 text-center">
+                    <Monitor className="w-10 h-10 text-white mx-auto mb-3" />
+                    <div className="text-white font-bold text-lg">Cadwork 3D</div>
                     <div className="text-emerald-100 text-sm">Especializado en madera</div>
                   </div>
                 </div>
