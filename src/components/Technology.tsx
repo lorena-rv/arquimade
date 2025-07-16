@@ -101,7 +101,7 @@ const Technology = () => {
                 <div className="absolute inset-0 bg-black/60"></div>
                 
                 {/* Content overlay */}
-                <div className="absolute inset-0 flex items-center justify-center">
+                <div className="absolute inset-0 flex items-center justify-center bg-white">
                   <img 
                     src="/cadwork-logo.png" 
                     alt="Cadwork 3D - Especializado en madera" 
