@@ -47,7 +47,7 @@ const Header = () => {
             <img 
               src="/ChatGPT Image 16 jul 2025, 14_11_02 (1).png" 
               alt="Arquimade" 
-              className="h-10 w-auto"
+              className="h-14 w-auto"
             />
           </div>
 
