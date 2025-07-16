@@ -118,7 +118,7 @@ const Header = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-8 text-emerald-100">
             <div className="flex items-center space-x-2">
               <Mail size={16} />
-              <span className="text-sm">infoarquimade@gmail.com</span>
+              <span className="text-sm">info@arquimade.net</span>
             </div>
             <div className="flex items-center space-x-2">
               <Phone size={16} />

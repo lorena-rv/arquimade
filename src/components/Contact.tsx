@@ -47,8 +47,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Email</h4>
-                    <a href="mailto:infoarquimade@gmail.com" className="text-gray-600 hover:text-emerald-600 transition-colors duration-300">
-                      infoarquimade@gmail.com
+                    <a href="mailto:info@arquimade.net" className="text-gray-600 hover:text-emerald-600 transition-colors duration-300">
+                      info@arquimade.net
                     </a>
                   </div>
                 </div>

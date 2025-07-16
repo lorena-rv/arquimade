@@ -23,8 +23,8 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-emerald-500" />
-                <a href="mailto:infoarquimade@gmail.com" className="text-gray-300 hover:text-emerald-400 transition-colors duration-300">
-                  infoarquimade@gmail.com
+                <a href="mailto:info@arquimade.net" className="text-gray-300 hover:text-emerald-400 transition-colors duration-300">
+                  info@arquimade.net
                 </a>
               </div>
               <div className="flex items-center space-x-3">
