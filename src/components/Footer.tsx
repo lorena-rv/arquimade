@@ -8,7 +8,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">Arquimade</h3>
+            <div className="mb-4">
+              <img 
+                src="/ChatGPT Image 16 jul 2025, 14_11_02 (1).png" 
+                alt="Arquimade" 
+                className="h-12 w-auto"
+              />
+            </div>
             <p className="text-gray-300 mb-4">
               Arquitectura en Madera | Gestión Integral de Proyectos
             </p>

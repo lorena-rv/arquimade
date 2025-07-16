@@ -44,7 +44,11 @@ const Header = () => {
       <nav className="relative z-50 px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 max-w-7xl mx-auto">
           <div className="flex items-center">
-            <span className="text-2xl font-bold text-white">Arquimade</span>
+            <img 
+              src="/ChatGPT Image 16 jul 2025, 14_11_02 (1).png" 
+              alt="Arquimade" 
+              className="h-10 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
